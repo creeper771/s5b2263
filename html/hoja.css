@@ -1,0 +1,13 @@
+input
+{
+ background-color: rgb(230, 173, 227);
+}
+.auth{
+ background-color: rgb(229, 230, 173);
+}
+.personal{
+ background-color: rgb(181, 230, 173);
+}
+.escolar{
+ background-color: rgb(173, 181, 230);
+}

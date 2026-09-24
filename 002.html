@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script>
+  function personalizar(){
+    //pedir nombre
+      nombre = prompt("como te llamas");
+    //construir el mensaje
+      mensaje = 'Hola ' + nombre + ', puedes llenar:';
+    //mostrar el mensaje
+    var eldiv = document.getElementById("mensaje");
+    eldiv.innerText=mensaje;
+  }
+  function mostrar(){
+    valor =  document.getElementById("ncontrol").value 
+    if(!valor){
+//      document.getElementById("escolares").hidden=true;
+      document.getElementById("escolares").style = "display: none;"
+    }else{
+//      document.getElementById("escolares").hidden=false;
+      document.getElementById("escolares").style = "display: inline;"
+    }
+  }
+ </script>
+</head>
+<body>
+ <form>
+  <div id="mensaje">
+    Hola, puedes llenar:
+  </div>
+<label for='usuario'>usuario</label>
+<input type='text' name='usuario' id='usuario' class="auth"><br>
+<label for='clave'>clave</label>
+<input type='text' name='clave' id='clave' id="clave" class="auth"><br>
+  <label for='nombre'>nombre</label>
+<input type='text' name='nombre' id='nombre' class="personal"><br>
+<label for='ncontrol'>ncontrol</label>
+<input type='text' name='ncontrol' id='ncontrol' class="escolar" onblur="mostrar();"><br>
+<label for='direccion'>direccion</label>
+<input type='text' name='direccion' id='direccion' class="personal"><br>
+<span id="escolares">
+  <label for='grupo'>grupo</label>
+  <input type='text' name='grupo' id='grupo' class="escolar"><br>
+  <label for='grado'>grado</label>
+  <input type='text' name='grado' id='grado' class="escolar"><br>
+</span>
+<label for='sexo'>sexo</label>
+<input type='text' name='sexo' id='sexo'  class="personal"><br>
+<input type="submit" value="Enviar">
+<input type="button" value="Saludar" onclick="alert('hola')">
+<input type="button" value="Personalizar" onclick="personalizar();">
+</form>
+
+<hr>
+si sigo escreibiendo cuando llege al final se va a la siguiente lienea  <p>
+  puedes ir al 
+  <a href=http://www.tuxtla.tecnm.mx>
+  <img src="https://tuxtla.tecnm.mx/wp-content/themes/albinomouse-child/Logo_TecNMcampus_TuxtlaGtz.png" width="100" height="100" >
+</a>
+y podemos segir
+<hr>
+si sigo escreibiendo cuando llege al final se va a la siguiente lienea  <p>
+  puedes ir al 
+  <a href=http://www.tuxtla.tecnm.mx style="display: block;">
+  <img src="https://tuxtla.tecnm.mx/wp-content/themes/albinomouse-child/Logo_TecNMcampus_TuxtlaGtz.png" width="100" height="100" >
+</a>
+y podemos segir
+
+
+</body>
+
+</html>
